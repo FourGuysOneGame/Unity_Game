@@ -820,9 +820,9 @@ GameObject:
   m_Component:
   - component: {fileID: 191053005}
   - component: {fileID: 191053004}
+  - component: {fileID: 191053009}
   - component: {fileID: 191053003}
   - component: {fileID: 191053006}
-  - component: {fileID: 191053007}
   - component: {fileID: 191053008}
   m_Layer: 0
   m_Name: Player
@@ -946,21 +946,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.94011205, y: 1.4235787}
   m_EdgeRadius: 0
---- !u!114 &191053007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191053002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08cfbed21b28e3d4eaf38805af468aab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 56147172}
-  movementspeed: 7
-  jumpforce: 12
 --- !u!95 &191053008
 Animator:
   serializedVersion: 5
@@ -982,6 +967,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &191053009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191053002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4fb13b9be2799e0aef040acd6b8029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  components:
+    rigidbody2D: {fileID: 191053003}
+    animator: {fileID: 0}
+  stats:
+    walkSpeed: 0
+    runSpeed: 0
 --- !u!1 &191095730
 GameObject:
   m_ObjectHideFlags: 0

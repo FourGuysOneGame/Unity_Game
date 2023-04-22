@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ShootCommand : Command
+{
+    private Player _player;
+
+    public ShootCommand(Player player, KeyCode keyCode) : base(keyCode)
+    {
+        this._player = player;
+    }
+
+    public override void GetKeyDown()
+    {
+        _player.Actions.Shoot();
+    }
+}
