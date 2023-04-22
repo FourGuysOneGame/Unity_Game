@@ -5,25 +5,19 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerReferences
 {
-    [SerializeField] private GameObject _bulletPrefab;
-    [SerializeField] private Transform _firePoint;
-    [SerializeField] private float _fireForce = 20f;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform firePoint;
 
     public GameObject BulletPrefab
     {
-        get => _bulletPrefab;
-        set => _bulletPrefab = value;
+        get => bulletPrefab;
+        set => bulletPrefab = value;
     }
 
     public Transform FirePoint
     {
-        get => _firePoint;
-        set => _firePoint = value;
+        get => firePoint;
+        set => firePoint = value;
     }
 
-    public float FireForce
-    {
-        get => _fireForce;
-        set => _fireForce = value;
-    }
 }

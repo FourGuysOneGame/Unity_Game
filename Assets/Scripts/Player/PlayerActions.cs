@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerActions
 {
-    private Player _player;
+    private readonly Player _player;
 
     public PlayerActions(Player player)
     {
@@ -37,8 +37,5 @@ public class PlayerActions
         Vector3 direction = new Vector3(_player.transform.localScale.x, 0);
 
         bullet.GetComponent<Bullet>().Setup(direction);
-
-        // bullet.GetComponent<Rigidbody2D>()
-        //     .AddForce(firePoint.right * _player.References.FireForce, ForceMode2D.Impulse);
     }
 }
