@@ -16,7 +16,7 @@ public class PlayerActions
     {
         _player.Components.Rigidbody2D.velocity =
             new Vector2(_player.Stats.Direction.x * _player.Stats.Speed, _player.Components.Rigidbody2D.velocity.y);
-        if (_player.Stats.Direction.x!=0)
+        if (_player.Stats.Direction.x != 0)
         {
             transform.localScale = new Vector3(_player.Stats.Direction.x < 0 ? -1 : 1, 1, 1);
         }
@@ -24,7 +24,10 @@ public class PlayerActions
 
     public void Jump()
     {
-        _player.Components.Rigidbody2D.AddForce(new Vector2(0, _player.Stats.JumpForce), ForceMode2D.Impulse);
+        if (_player.Utilities.IsGrounded())
+        {
+            _player.Components.Rigidbody2D.AddForce(new Vector2(0, _player.Stats.JumpForce), ForceMode2D.Impulse);
+        }
     }
 
     public void Shoot()

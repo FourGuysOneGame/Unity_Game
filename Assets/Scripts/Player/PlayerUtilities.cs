@@ -38,4 +38,11 @@ public class PlayerUtilities
             }
         }
     }
+
+    public bool IsGrounded()
+    {
+        RaycastHit2D hit = Physics2D.BoxCast(_player.Components.Collider2D.bounds.center,
+            _player.Components.Collider2D.bounds.size, 0, Vector2.down, 0.1f, _player.Components.GroundLayer);
+        return hit.collider != null;
+    }
 }

@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private PlayerComponents components;
 
-    [SerializeField] private PlayerReferences _references;
+    [SerializeField] private PlayerReferences references;
 
     [SerializeField] private PlayerStats stats;
 
@@ -19,8 +19,9 @@ public class Player : MonoBehaviour
     public PlayerActions Actions => _actions;
     public PlayerComponents Components => components;
 
-    public PlayerReferences References => _references;
+    public PlayerReferences References => references;
     public PlayerStats Stats => stats;
+    public PlayerUtilities Utilities => _utilities;
 
 
     // Start is called before the first frame update
