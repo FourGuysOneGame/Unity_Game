@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 101987404}
   - component: {fileID: 101987406}
   - component: {fileID: 101987405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 128682457}
   - component: {fileID: 128682459}
   - component: {fileID: 128682458}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1846,7 +1846,7 @@ GameObject:
   - component: {fileID: 252028040}
   - component: {fileID: 252028042}
   - component: {fileID: 252028041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2734,7 +2734,7 @@ GameObject:
   - component: {fileID: 353074176}
   - component: {fileID: 353074178}
   - component: {fileID: 353074177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: beczka_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3178,7 +3178,7 @@ GameObject:
   - component: {fileID: 414110814}
   - component: {fileID: 414110816}
   - component: {fileID: 414110815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3289,7 +3289,7 @@ GameObject:
   - component: {fileID: 442347532}
   - component: {fileID: 442347534}
   - component: {fileID: 442347533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3400,7 +3400,7 @@ GameObject:
   - component: {fileID: 465995109}
   - component: {fileID: 465995111}
   - component: {fileID: 465995110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3720,7 +3720,7 @@ GameObject:
   - component: {fileID: 539586752}
   - component: {fileID: 539586754}
   - component: {fileID: 539586753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3831,7 +3831,7 @@ GameObject:
   - component: {fileID: 549973415}
   - component: {fileID: 549973417}
   - component: {fileID: 549973416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4268,7 +4268,7 @@ GameObject:
   - component: {fileID: 605526419}
   - component: {fileID: 605526421}
   - component: {fileID: 605526420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5153,7 +5153,7 @@ GameObject:
   - component: {fileID: 848996236}
   - component: {fileID: 848996238}
   - component: {fileID: 848996237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: beczka_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5480,7 +5480,7 @@ GameObject:
   - component: {fileID: 1000536684}
   - component: {fileID: 1000536686}
   - component: {fileID: 1000536685}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6641,7 +6641,7 @@ GameObject:
   - component: {fileID: 1290038877}
   - component: {fileID: 1290038879}
   - component: {fileID: 1290038878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7415,7 +7415,7 @@ GameObject:
   - component: {fileID: 1473736410}
   - component: {fileID: 1473736412}
   - component: {fileID: 1473736411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8078,7 +8078,7 @@ GameObject:
   - component: {fileID: 1571455856}
   - component: {fileID: 1571455858}
   - component: {fileID: 1571455857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8297,7 +8297,7 @@ GameObject:
   - component: {fileID: 1624982188}
   - component: {fileID: 1624982190}
   - component: {fileID: 1624982189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9096,7 +9096,7 @@ GameObject:
   - component: {fileID: 1887543852}
   - component: {fileID: 1887543854}
   - component: {fileID: 1887543853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9291,7 +9291,7 @@ GameObject:
   - component: {fileID: 1958708002}
   - component: {fileID: 1958708004}
   - component: {fileID: 1958708003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
