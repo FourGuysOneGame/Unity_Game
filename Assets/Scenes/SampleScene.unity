@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 56147171}
-  - component: {fileID: 56147172}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -156,21 +155,6 @@ Transform:
   m_Father: {fileID: 191053005}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &56147172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56147170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbebabefdcb7d254a9be6ed1954df881, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 9038846016808562671, guid: 91dc8d4143c3b41449ad1c7b9c08ff20, type: 3}
-  firePoint: {fileID: 1642654427}
-  fireForce: 20
 --- !u!1 &70484488
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +166,7 @@ GameObject:
   - component: {fileID: 70484489}
   - component: {fileID: 70484491}
   - component: {fileID: 70484490}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p1_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +277,7 @@ GameObject:
   - component: {fileID: 101987404}
   - component: {fileID: 101987406}
   - component: {fileID: 101987405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -404,7 +388,7 @@ GameObject:
   - component: {fileID: 111716890}
   - component: {fileID: 111716891}
   - component: {fileID: 111716892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +499,7 @@ GameObject:
   - component: {fileID: 128682457}
   - component: {fileID: 128682459}
   - component: {fileID: 128682458}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +694,7 @@ GameObject:
   - component: {fileID: 160823261}
   - component: {fileID: 160823262}
   - component: {fileID: 160823263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p4_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -981,10 +965,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
     rigidbody2D: {fileID: 191053003}
-    animator: {fileID: 0}
+    animator: {fileID: 191053008}
+    groundLayer:
+      serializedVersion: 2
+      m_Bits: 64
+    collider2D: {fileID: 191053006}
+  references:
+    bulletPrefab: {fileID: 0}
+    firePoint: {fileID: 0}
   stats:
-    walkSpeed: 0
+    walkSpeed: 7
     runSpeed: 0
+    jumpForce: 12
 --- !u!1 &191095730
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +988,7 @@ GameObject:
   - component: {fileID: 191095731}
   - component: {fileID: 191095732}
   - component: {fileID: 191095733}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1107,7 +1099,7 @@ GameObject:
   - component: {fileID: 200333018}
   - component: {fileID: 200333019}
   - component: {fileID: 200333020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1218,7 +1210,7 @@ GameObject:
   - component: {fileID: 203673934}
   - component: {fileID: 203673935}
   - component: {fileID: 203673936}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p4_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1329,7 +1321,7 @@ GameObject:
   - component: {fileID: 209135073}
   - component: {fileID: 209135074}
   - component: {fileID: 209135075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1440,7 +1432,7 @@ GameObject:
   - component: {fileID: 228644248}
   - component: {fileID: 228644250}
   - component: {fileID: 228644251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: schodek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1551,7 +1543,7 @@ GameObject:
   - component: {fileID: 228716492}
   - component: {fileID: 228716493}
   - component: {fileID: 228716494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1746,7 +1738,7 @@ GameObject:
   - component: {fileID: 240355992}
   - component: {fileID: 240355993}
   - component: {fileID: 240355994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p6_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,7 +1846,7 @@ GameObject:
   - component: {fileID: 252028040}
   - component: {fileID: 252028042}
   - component: {fileID: 252028041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1965,7 +1957,7 @@ GameObject:
   - component: {fileID: 280050186}
   - component: {fileID: 280050187}
   - component: {fileID: 280050188}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2076,7 +2068,7 @@ GameObject:
   - component: {fileID: 284664161}
   - component: {fileID: 284664162}
   - component: {fileID: 284664163}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p3_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2187,7 +2179,7 @@ GameObject:
   - component: {fileID: 300553105}
   - component: {fileID: 300553106}
   - component: {fileID: 300553107}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2298,7 +2290,7 @@ GameObject:
   - component: {fileID: 301538035}
   - component: {fileID: 301538036}
   - component: {fileID: 301538037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p7_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2409,7 +2401,7 @@ GameObject:
   - component: {fileID: 310569463}
   - component: {fileID: 310569464}
   - component: {fileID: 310569465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p2_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2520,7 +2512,7 @@ GameObject:
   - component: {fileID: 330787282}
   - component: {fileID: 330787283}
   - component: {fileID: 330787284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2631,7 +2623,7 @@ GameObject:
   - component: {fileID: 351826315}
   - component: {fileID: 351826316}
   - component: {fileID: 351826317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p5_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2742,7 +2734,7 @@ GameObject:
   - component: {fileID: 353074176}
   - component: {fileID: 353074178}
   - component: {fileID: 353074177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: beczka_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2853,7 +2845,7 @@ GameObject:
   - component: {fileID: 361364083}
   - component: {fileID: 361364084}
   - component: {fileID: 361364085}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2964,7 +2956,7 @@ GameObject:
   - component: {fileID: 370183035}
   - component: {fileID: 370183036}
   - component: {fileID: 370183037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p6_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3075,7 +3067,7 @@ GameObject:
   - component: {fileID: 387834103}
   - component: {fileID: 387834104}
   - component: {fileID: 387834105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p3_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3186,7 +3178,7 @@ GameObject:
   - component: {fileID: 414110814}
   - component: {fileID: 414110816}
   - component: {fileID: 414110815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3297,7 +3289,7 @@ GameObject:
   - component: {fileID: 442347532}
   - component: {fileID: 442347534}
   - component: {fileID: 442347533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3408,7 +3400,7 @@ GameObject:
   - component: {fileID: 465995109}
   - component: {fileID: 465995111}
   - component: {fileID: 465995110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3519,7 +3511,7 @@ GameObject:
   - component: {fileID: 507783920}
   - component: {fileID: 507783921}
   - component: {fileID: 507783922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p7_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3713,7 +3705,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc2dd96091be66b4999bfc66f08c815a, type: 3}
+  m_Script: {fileID: 11500000, guid: 04ce9a892dbc073cda91786b04fc269c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 191053005}
@@ -3728,7 +3720,7 @@ GameObject:
   - component: {fileID: 539586752}
   - component: {fileID: 539586754}
   - component: {fileID: 539586753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3839,7 +3831,7 @@ GameObject:
   - component: {fileID: 549973415}
   - component: {fileID: 549973417}
   - component: {fileID: 549973416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4165,7 +4157,7 @@ GameObject:
   - component: {fileID: 597807000}
   - component: {fileID: 597807001}
   - component: {fileID: 597807002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4276,7 +4268,7 @@ GameObject:
   - component: {fileID: 605526419}
   - component: {fileID: 605526421}
   - component: {fileID: 605526420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4387,7 +4379,7 @@ GameObject:
   - component: {fileID: 635196280}
   - component: {fileID: 635196281}
   - component: {fileID: 635196282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4498,7 +4490,7 @@ GameObject:
   - component: {fileID: 735576109}
   - component: {fileID: 735576110}
   - component: {fileID: 735576111}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4609,7 +4601,7 @@ GameObject:
   - component: {fileID: 790809866}
   - component: {fileID: 790809867}
   - component: {fileID: 790809868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p5_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4720,7 +4712,7 @@ GameObject:
   - component: {fileID: 823183904}
   - component: {fileID: 823183905}
   - component: {fileID: 823183906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p3_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4831,7 +4823,7 @@ GameObject:
   - component: {fileID: 830463238}
   - component: {fileID: 830463239}
   - component: {fileID: 830463240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p7_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4939,7 +4931,7 @@ GameObject:
   - component: {fileID: 833515807}
   - component: {fileID: 833515808}
   - component: {fileID: 833515809}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p5_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5050,7 +5042,7 @@ GameObject:
   - component: {fileID: 845062436}
   - component: {fileID: 845062437}
   - component: {fileID: 845062438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5161,7 +5153,7 @@ GameObject:
   - component: {fileID: 848996236}
   - component: {fileID: 848996238}
   - component: {fileID: 848996237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: beczka_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5272,7 +5264,7 @@ GameObject:
   - component: {fileID: 862191617}
   - component: {fileID: 862191618}
   - component: {fileID: 862191619}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5380,7 +5372,7 @@ GameObject:
   - component: {fileID: 908886724}
   - component: {fileID: 908886725}
   - component: {fileID: 908886726}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5488,7 +5480,7 @@ GameObject:
   - component: {fileID: 1000536684}
   - component: {fileID: 1000536686}
   - component: {fileID: 1000536685}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5599,7 +5591,7 @@ GameObject:
   - component: {fileID: 1031522952}
   - component: {fileID: 1031522953}
   - component: {fileID: 1031522954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p5_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5707,7 +5699,7 @@ GameObject:
   - component: {fileID: 1070835304}
   - component: {fileID: 1070835305}
   - component: {fileID: 1070835306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p2_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5986,7 +5978,7 @@ GameObject:
   - component: {fileID: 1226158025}
   - component: {fileID: 1226158026}
   - component: {fileID: 1226158027}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6097,7 +6089,7 @@ GameObject:
   - component: {fileID: 1231684022}
   - component: {fileID: 1231684023}
   - component: {fileID: 1231684024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6208,7 +6200,7 @@ GameObject:
   - component: {fileID: 1246177939}
   - component: {fileID: 1246177940}
   - component: {fileID: 1246177941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6319,7 +6311,7 @@ GameObject:
   - component: {fileID: 1252086500}
   - component: {fileID: 1252086501}
   - component: {fileID: 1252086502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6430,7 +6422,7 @@ GameObject:
   - component: {fileID: 1253120008}
   - component: {fileID: 1253120009}
   - component: {fileID: 1253120010}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6541,7 +6533,7 @@ GameObject:
   - component: {fileID: 1272829397}
   - component: {fileID: 1272829398}
   - component: {fileID: 1272829399}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p6_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6649,7 +6641,7 @@ GameObject:
   - component: {fileID: 1290038877}
   - component: {fileID: 1290038879}
   - component: {fileID: 1290038878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6760,7 +6752,7 @@ GameObject:
   - component: {fileID: 1313304347}
   - component: {fileID: 1313304348}
   - component: {fileID: 1313304349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p4_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6868,7 +6860,7 @@ GameObject:
   - component: {fileID: 1335132872}
   - component: {fileID: 1335132873}
   - component: {fileID: 1335132874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6979,7 +6971,7 @@ GameObject:
   - component: {fileID: 1340548863}
   - component: {fileID: 1340548864}
   - component: {fileID: 1340548865}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p6_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7090,7 +7082,7 @@ GameObject:
   - component: {fileID: 1396774671}
   - component: {fileID: 1396774672}
   - component: {fileID: 1396774673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7201,7 +7193,7 @@ GameObject:
   - component: {fileID: 1406752973}
   - component: {fileID: 1406752974}
   - component: {fileID: 1406752975}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7312,7 +7304,7 @@ GameObject:
   - component: {fileID: 1417568714}
   - component: {fileID: 1417568715}
   - component: {fileID: 1417568716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7423,7 +7415,7 @@ GameObject:
   - component: {fileID: 1473736410}
   - component: {fileID: 1473736412}
   - component: {fileID: 1473736411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7534,7 +7526,7 @@ GameObject:
   - component: {fileID: 1506343753}
   - component: {fileID: 1506343754}
   - component: {fileID: 1506343755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p6_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7645,7 +7637,7 @@ GameObject:
   - component: {fileID: 1535153507}
   - component: {fileID: 1535153508}
   - component: {fileID: 1535153509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p4_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7756,7 +7748,7 @@ GameObject:
   - component: {fileID: 1553712450}
   - component: {fileID: 1553712451}
   - component: {fileID: 1553712452}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7867,7 +7859,7 @@ GameObject:
   - component: {fileID: 1555805873}
   - component: {fileID: 1555805875}
   - component: {fileID: 1555805874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p1_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7978,7 +7970,7 @@ GameObject:
   - component: {fileID: 1570232212}
   - component: {fileID: 1570232213}
   - component: {fileID: 1570232214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p3_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8086,7 +8078,7 @@ GameObject:
   - component: {fileID: 1571455856}
   - component: {fileID: 1571455858}
   - component: {fileID: 1571455857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_prawa_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8197,7 +8189,7 @@ GameObject:
   - component: {fileID: 1577040684}
   - component: {fileID: 1577040685}
   - component: {fileID: 1577040686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p7_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8305,7 +8297,7 @@ GameObject:
   - component: {fileID: 1624982188}
   - component: {fileID: 1624982190}
   - component: {fileID: 1624982189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8416,7 +8408,7 @@ GameObject:
   - component: {fileID: 1627862992}
   - component: {fileID: 1627862994}
   - component: {fileID: 1627862993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p1_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8555,7 +8547,7 @@ GameObject:
   - component: {fileID: 1738408303}
   - component: {fileID: 1738408304}
   - component: {fileID: 1738408305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8666,7 +8658,7 @@ GameObject:
   - component: {fileID: 1786378258}
   - component: {fileID: 1786378260}
   - component: {fileID: 1786378259}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8777,7 +8769,7 @@ GameObject:
   - component: {fileID: 1793113613}
   - component: {fileID: 1793113614}
   - component: {fileID: 1793113615}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p2_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8885,7 +8877,7 @@ GameObject:
   - component: {fileID: 1852078389}
   - component: {fileID: 1852078390}
   - component: {fileID: 1852078391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p3_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8993,7 +8985,7 @@ GameObject:
   - component: {fileID: 1859891474}
   - component: {fileID: 1859891475}
   - component: {fileID: 1859891476}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9104,7 +9096,7 @@ GameObject:
   - component: {fileID: 1887543852}
   - component: {fileID: 1887543854}
   - component: {fileID: 1887543853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9299,7 +9291,7 @@ GameObject:
   - component: {fileID: 1958708002}
   - component: {fileID: 1958708004}
   - component: {fileID: 1958708003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sciana_lewa_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9410,7 +9402,7 @@ GameObject:
   - component: {fileID: 1979093100}
   - component: {fileID: 1979093101}
   - component: {fileID: 1979093102}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p7_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9521,7 +9513,7 @@ GameObject:
   - component: {fileID: 2008329825}
   - component: {fileID: 2008329826}
   - component: {fileID: 2008329827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p5_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9629,7 +9621,7 @@ GameObject:
   - component: {fileID: 2021868939}
   - component: {fileID: 2021868940}
   - component: {fileID: 2021868941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9740,7 +9732,7 @@ GameObject:
   - component: {fileID: 2051864738}
   - component: {fileID: 2051864739}
   - component: {fileID: 2051864740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9851,7 +9843,7 @@ GameObject:
   - component: {fileID: 2086626892}
   - component: {fileID: 2086626893}
   - component: {fileID: 2086626894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p4_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9959,7 +9951,7 @@ GameObject:
   - component: {fileID: 2104455907}
   - component: {fileID: 2104455908}
   - component: {fileID: 2104455909}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: d_27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
