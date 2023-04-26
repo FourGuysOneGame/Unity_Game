@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using Input = UnityEngine.Windows.Input;
 
 public class PlayerActions
 {
@@ -34,12 +33,9 @@ public class PlayerActions
     public void Shoot()
     {
         Transform firePoint = _player.References.FirePoint;
-
         GameObject bullet =
             Object.Instantiate(_player.References.BulletPrefab, firePoint.position, Quaternion.identity);
-
         Vector3 direction = new Vector3(_player.transform.localScale.x, 0);
-
         bullet.GetComponent<Bullet>().Setup(direction);
     }
 
@@ -62,5 +58,10 @@ public class PlayerActions
             _player.Components.Rigidbody2D.gravityScale = 3;
 
         }
+    }
+
+    public void TakeHit()
+    {
+        Debug.Log("Direct hit!");
     }
 }

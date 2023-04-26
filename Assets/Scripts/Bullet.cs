@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private float speed = 20f;
     private Vector2 _direction;
+    [SerializeField] private string targetTag;
 
     public void Setup(Vector2 direction)
     {
