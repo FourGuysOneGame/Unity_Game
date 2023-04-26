@@ -42,5 +42,6 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         _actions.Move(transform);
+        _actions.ClimbLadder();
     }
 }
