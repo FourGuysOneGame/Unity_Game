@@ -7,6 +7,7 @@ public class PlayerReferences
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
+    [SerializeField] private LayerMask ladder;
 
     public GameObject BulletPrefab
     {
@@ -18,6 +19,12 @@ public class PlayerReferences
     {
         get => firePoint;
         set => firePoint = value;
+    }
+    
+    public LayerMask Ladder
+    {
+        get => ladder;
+        set => ladder = value;
     }
 
 }

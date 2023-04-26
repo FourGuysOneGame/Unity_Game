@@ -39,6 +39,27 @@ public class PlayerActions
         bullet.GetComponent<Bullet>().Setup(direction);
     }
 
+    public void ClimbLadder()
+    {
+        if (_player.Utilities.IsOnLadder())
+        {
+            float moveVertical = _player.Stats.Direction.y;
+
+            _player.Components.Rigidbody2D.velocity =
+                new Vector2(_player.Components.Rigidbody2D.velocity.x, moveVertical * _player.Stats.WalkSpeed);
+            
+            _player.Components.Rigidbody2D.gravityScale = 0;
+        }
+        else
+        {
+            _player.Components.Rigidbody2D.velocity = new Vector2(
+                _player.Components.Rigidbody2D.velocity.x,_player.Components.Rigidbody2D.velocity.y);
+            
+            _player.Components.Rigidbody2D.gravityScale = 3;
+
+        }
+    }
+
     public void TakeHit()
     {
         Debug.Log("Direct hit!");

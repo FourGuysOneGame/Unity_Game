@@ -18,7 +18,7 @@ public class PlayerUtilities
     public void HandleInput()
     {
         _player.Stats.Direction =
-            new Vector2(Input.GetAxisRaw("Horizontal"), _player.Components.Rigidbody2D.velocity.y);
+            new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         foreach (Command command in _commands)
         {
@@ -45,5 +45,13 @@ public class PlayerUtilities
         RaycastHit2D hit = Physics2D.BoxCast(bounds.center,
             bounds.size, 0, Vector2.down, 0.1f, _player.Components.GroundLayer);
         return hit.collider != null;
+    }
+
+    public bool IsOnLadder()
+    {
+        LayerMask whatIsLadder = LayerMask.GetMask("Ladder");
+        RaycastHit2D isLadder = Physics2D.Raycast(_player.transform.position, Vector2.up, 1, whatIsLadder);
+        
+        return isLadder.collider != null;
     }
 }
