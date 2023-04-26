@@ -33,12 +33,14 @@ public class PlayerActions
     public void Shoot()
     {
         Transform firePoint = _player.References.FirePoint;
-
         GameObject bullet =
             Object.Instantiate(_player.References.BulletPrefab, firePoint.position, Quaternion.identity);
-
         Vector3 direction = new Vector3(_player.transform.localScale.x, 0);
-
         bullet.GetComponent<Bullet>().Setup(direction);
+    }
+
+    public void TakeHit()
+    {
+        Debug.Log("Direct hit!");
     }
 }
