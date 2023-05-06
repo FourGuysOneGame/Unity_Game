@@ -8,7 +8,7 @@ public class ClimbLadderCommand : Command
 
     public ClimbLadderCommand(Player player, KeyCode keyCode) : base(keyCode)
     {
-        this._player = player;
+        _player = player;
     }
 
     public override void GetKeyDown()

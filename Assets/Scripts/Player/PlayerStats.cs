@@ -12,6 +12,8 @@ public class PlayerStats
     [SerializeField] private float walkSpeed = 7f;
     [SerializeField] private float runSpeed;
     [SerializeField] private float jumpForce = 12f;
+    [SerializeField] private int livesAmount = 3;
     public float WalkSpeed => walkSpeed;
     public float JumpForce => jumpForce;
+    public int LivesAmount => livesAmount;
 }

@@ -8,7 +8,7 @@ public class ShootCommand : Command
 
     public ShootCommand(Player player, KeyCode keyCode) : base(keyCode)
     {
-        this._player = player;
+        _player = player;
     }
 
     public override void GetKeyDown()

@@ -9,7 +9,7 @@ public class PlayerActions
 
     public PlayerActions(Player player)
     {
-        this._player = player;
+        _player = player;
     }
 
     public void Move(Transform transform)
@@ -47,21 +47,21 @@ public class PlayerActions
 
             _player.Components.Rigidbody2D.velocity =
                 new Vector2(_player.Components.Rigidbody2D.velocity.x, moveVertical * _player.Stats.WalkSpeed);
-            
+
             _player.Components.Rigidbody2D.gravityScale = 0;
         }
         else
         {
-            _player.Components.Rigidbody2D.velocity = new Vector2(
-                _player.Components.Rigidbody2D.velocity.x,_player.Components.Rigidbody2D.velocity.y);
-            
-            _player.Components.Rigidbody2D.gravityScale = 3;
+            Vector2 velocity = _player.Components.Rigidbody2D.velocity;
+            velocity = new Vector2(velocity.x, velocity.y);
+            _player.Components.Rigidbody2D.velocity = velocity;
 
+            _player.Components.Rigidbody2D.gravityScale = 3;
         }
     }
 
     public void TakeHit()
     {
-        Debug.Log("Direct hit!");
+        UIManager.Instance.RemoveLife(1);
     }
 }
