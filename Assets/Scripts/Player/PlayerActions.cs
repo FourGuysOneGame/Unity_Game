@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class PlayerActions
+public class PlayerActions : IHitable
 {
     private readonly Player _player;
 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FullHeart
   - EmptyHeart
+  - Enemy
+  - Unhittable
   layers:
   - Default
   - TransparentFX
