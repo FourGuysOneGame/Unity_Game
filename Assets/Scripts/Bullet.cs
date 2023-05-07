@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Bullet : MonoBehaviour
 {
@@ -23,7 +24,14 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag(targetTag))
         {
-            other.gameObject.GetComponentInParent<IHitable>().TakeHit();
+            if (targetTag == "Player")
+            {
+                other.gameObject.GetComponent<Player>().Actions.TakeHit();
+            }
+            else
+            {
+                other.gameObject.GetComponentInParent<IHitable>().TakeHit();
+            }
         }
 
         Destroy(gameObject);
