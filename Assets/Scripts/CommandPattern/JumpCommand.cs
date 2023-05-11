@@ -7,7 +7,7 @@ public class JumpCommand : Command
     private Player _player;
     public JumpCommand(Player player, KeyCode keyCode) : base(keyCode)
     {
-        this._player = player;
+        _player = player;
     }
 
     public override void GetKeyDown()

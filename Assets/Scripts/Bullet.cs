@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Bullet : MonoBehaviour
 {
@@ -19,8 +20,20 @@ public class Bullet : MonoBehaviour
         transform.Translate(_direction * speed * Time.deltaTime);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.CompareTag(targetTag))
+        {
+            if (targetTag == "Player")
+            {
+                other.gameObject.GetComponent<Player>().Actions.TakeHit();
+            }
+            else
+            {
+                other.gameObject.GetComponentInParent<IHitable>().TakeHit();
+            }
+        }
+
         Destroy(gameObject);
     }
 }

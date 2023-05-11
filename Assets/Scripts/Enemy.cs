@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, ICollisionHandler
+public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
@@ -88,5 +88,10 @@ public class Enemy : MonoBehaviour, ICollisionHandler
         {
             _target = null;
         }
+    }
+
+    public void TakeHit()
+    {
+        Debug.Log("I took a hit!");
     }
 }
