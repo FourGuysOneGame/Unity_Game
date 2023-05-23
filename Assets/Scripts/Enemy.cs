@@ -11,10 +11,15 @@ public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
     [SerializeField] private float attackCooldown;
     private bool _canAttack = true;
     private float _timeSinceLastAttack;
+    public static int enemiesAmount = 0;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        // Gets number of enemies in scene
+        enemiesAmount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        Debug.Log(enemiesAmount);
     }
 
     // Update is called once per frame
@@ -90,8 +95,15 @@ public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
         }
     }
 
+    public void KillEnemy()
+    {
+        enemiesAmount--;
+    }
+    
     public void TakeHit()
     {
         Debug.Log("I took a hit!");
+        // For testing one hit = dead
+        KillEnemy();
     }
 }
