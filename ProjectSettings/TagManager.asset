@@ -8,6 +8,8 @@ TagManager:
   - EmptyHeart
   - Enemy
   - Unhittable
+  - Barrel
+  - LifeHeart
   layers:
   - Default
   - TransparentFX

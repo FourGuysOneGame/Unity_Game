@@ -2956,6 +2956,7 @@ GameObject:
   - component: {fileID: 353074176}
   - component: {fileID: 353074178}
   - component: {fileID: 353074177}
+  - component: {fileID: 353074179}
   m_Layer: 6
   m_Name: beczka_1
   m_TagString: Untagged
@@ -3056,6 +3057,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &353074179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353074175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04aca283c1a440439a7c9be64c3ef939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDrops:
+  - {fileID: 5104737501454244602, guid: 0a5bfdfc099f51541ad7f70c22fd31c6, type: 3}
 --- !u!1 &361364082
 GameObject:
   m_ObjectHideFlags: 0
@@ -5736,9 +5751,10 @@ GameObject:
   - component: {fileID: 848996236}
   - component: {fileID: 848996238}
   - component: {fileID: 848996237}
+  - component: {fileID: 848996239}
   m_Layer: 6
   m_Name: beczka_2
-  m_TagString: Untagged
+  m_TagString: Barrel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5836,6 +5852,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &848996239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848996235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04aca283c1a440439a7c9be64c3ef939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDrops:
+  - {fileID: 5104737501454244602, guid: 0a5bfdfc099f51541ad7f70c22fd31c6, type: 3}
 --- !u!1 &862191616
 GameObject:
   m_ObjectHideFlags: 0
