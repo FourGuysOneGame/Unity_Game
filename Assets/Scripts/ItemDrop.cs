@@ -19,5 +19,9 @@ public class ItemDrop : MonoBehaviour
             other.gameObject.GetComponent<Player>().Actions.Heal();
             Destroy(gameObject);
         }
+        else if(other.collider.CompareTag("Enemy"))
+        {
+            Physics2D.IgnoreCollision( other.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
     }
 }
