@@ -100,7 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  targetTag: Player
+  targetTags:
+  - Player
 --- !u!58 &8933061660314376086
 CircleCollider2D:
   m_ObjectHideFlags: 0

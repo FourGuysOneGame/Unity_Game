@@ -64,4 +64,9 @@ public class PlayerActions : IHitable
     {
         UIManager.Instance.RemoveLife(1);
     }
+
+    public void Heal()
+    {
+        UIManager.Instance.AddLife(1);
+    }
 }
