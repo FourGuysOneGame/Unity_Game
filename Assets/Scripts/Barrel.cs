@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem.LowLevel;
 
 
 public class Barrel : MonoBehaviour, IHitable
@@ -15,9 +13,7 @@ public class Barrel : MonoBehaviour, IHitable
         {
             for (int i = 0; i < itemDrops.Count; i++)
             {
-                Debug.Log(itemDrops);
                 Instantiate(itemDrops[i], transform.position, Quaternion.identity);
-                Debug.Log("Item dropped");
             }
 
             Destroy(gameObject);
