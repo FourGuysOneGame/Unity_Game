@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerActions : IHitable
@@ -63,5 +60,10 @@ public class PlayerActions : IHitable
     public void TakeHit()
     {
         UIManager.Instance.RemoveLife(1);
+    }
+
+    public void Heal()
+    {
+        UIManager.Instance.AddLife(1);
     }
 }

@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
@@ -12,6 +9,7 @@ public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
     private bool _canAttack = true;
     private float _timeSinceLastAttack;
     public static int enemiesAmount = 0;
+    private int enemyHealth = 3;
 
 
     // Start is called before the first frame update
@@ -19,7 +17,6 @@ public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
     {
         // Gets number of enemies in scene
         enemiesAmount = GameObject.FindGameObjectsWithTag("Enemy").Length;
-        Debug.Log(enemiesAmount);
     }
 
     // Update is called once per frame
@@ -102,8 +99,11 @@ public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
     
     public void TakeHit()
     {
-        Debug.Log("I took a hit!");
-        // For testing one hit = dead
-        KillEnemy();
+        enemyHealth--;
+        if (enemyHealth == 0)
+        {
+            KillEnemy();
+            Destroy(gameObject);
+        }
     }
 }
