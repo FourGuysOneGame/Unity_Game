@@ -11126,7 +11126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb8c304e79ac881faa1cf5fab7f64af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinsText: {fileID: 0}
+  coinsText: {fileID: 819122652}
   lifeParent: {fileID: 407368938}
   fullLifePrefab: {fileID: 5491207557943398936, guid: 8b39baec2ad6a9f448092e9998859682, type: 3}
   emptyLifePrefab: {fileID: 5491207557943398936, guid: 6289f741b2b35a11aa74d88829efdeb3, type: 3}
