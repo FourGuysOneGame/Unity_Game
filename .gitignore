@@ -75,3 +75,9 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 /[Aa]ssets/Pixel Adventure 1/*
+
+# After you run the game this folders pop up
+/My project (1).exe
+/My project (1)_BurstDebugInformation_DoNotShip
+/My project (1)_Data
+/MonoBleedingEdge
