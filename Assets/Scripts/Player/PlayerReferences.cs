@@ -18,11 +18,10 @@ public class PlayerReferences
         get => firePoint;
         set => firePoint = value;
     }
-    
+
     public LayerMask Ladder
     {
         get => ladder;
         set => ladder = value;
     }
-
 }

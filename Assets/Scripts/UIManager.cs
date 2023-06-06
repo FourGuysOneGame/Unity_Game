@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     private static UIManager _instance;
+    private int _coinsCount = 0;
+    [SerializeField] private TMP_Text coinsText;
 
     [SerializeField] private Transform lifeParent;
 
@@ -55,12 +58,18 @@ public class UIManager : MonoBehaviour
             {
                 _lives.Add(Instantiate(fullLifePrefab, lifeParent));
 
-                for (int j = 0; j < count; j++) 
+                for (int j = 0; j < count; j++)
                 {
                     _lives.Add(Instantiate(emptyLifePrefab, lifeParent));
                 }
             }
         }
+    }
+
+    public void AddCoin(int amount = 1)
+    {
+        _coinsCount += amount;
+        coinsText.SetText(_coinsCount.ToString());
     }
 
     public void RemoveLife(int amount)

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -27,7 +28,7 @@ public class Player : MonoBehaviour
         _actions = new PlayerActions(this);
         _utilities = new PlayerUtilities(this);
         stats.Speed = stats.WalkSpeed;
-        
+
         UIManager.Instance.AddLifeContainer(stats.LivesAmount);
     }
 
@@ -41,5 +42,10 @@ public class Player : MonoBehaviour
     {
         _actions.Move(transform);
         _actions.ClimbLadder();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        _actions.Collide(other);
     }
 }

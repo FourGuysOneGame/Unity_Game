@@ -9,7 +9,8 @@ TagManager:
   - Enemy
   - Unhittable
   - Barrel
-  - LifeHeart
+  - Collectable
+  - Collect
   layers:
   - Default
   - TransparentFX

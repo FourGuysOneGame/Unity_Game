@@ -50,7 +50,7 @@ public class PlayerUtilities
     {
         LayerMask whatIsLadder = LayerMask.GetMask("Ladder");
         RaycastHit2D isLadder = Physics2D.Raycast(_player.transform.position, Vector2.up, 1, whatIsLadder);
-        
+
         return isLadder.collider != null;
     }
 }

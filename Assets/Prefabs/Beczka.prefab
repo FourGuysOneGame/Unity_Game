@@ -125,4 +125,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemDrops:
-  - {fileID: 5104737501454244602, guid: 0a5bfdfc099f51541ad7f70c22fd31c6, type: 3}
+  - {fileID: 7002702127779409964, guid: 5cfad2fb061fa9866ac76afb44ac463e, type: 3}
+  barrelHp: 3

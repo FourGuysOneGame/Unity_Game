@@ -82,6 +82,11 @@ public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
                 _target = other.transform;
             }
         }
+
+        if (other.CompareTag("Collectable"))
+        {
+            Physics2D.IgnoreCollision( other.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
     }
 
     public void CollisionExit(string colliderName, GameObject other)

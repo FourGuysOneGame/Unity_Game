@@ -66,4 +66,12 @@ public class PlayerActions : IHitable
     {
         UIManager.Instance.AddLife(1);
     }
+
+    public void Collide(Collider2D collider)
+    {
+        if (collider.CompareTag("Collectable"))
+        {
+            collider.GetComponent<ICollectable>().Collect(_player.GetComponent<Collider2D>());
+        }
+    }
 }

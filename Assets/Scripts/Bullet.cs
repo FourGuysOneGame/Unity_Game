@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
 
     public void Setup(Vector2 direction)
     {
-        this._direction = direction;
+        _direction = direction;
     }
 
     private void Update()
@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         string collidedItemTag = other.collider.tag;
-        
+
         if (targetTags.Contains(collidedItemTag))
         {
             if (collidedItemTag == "Player")
@@ -32,17 +32,25 @@ public class Bullet : MonoBehaviour
             {
                 other.gameObject.GetComponent<Enemy>().TakeHit();
             }
-            else if (collidedItemTag == "LifeHeart")
+            else if (collidedItemTag == "Collectable")
             {
                 Destroy(other.gameObject);
             }
-            else 
+            else
             {
                 other.gameObject.GetComponentInParent<IHitable>().TakeHit();
             }
-            
         }
 
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        string collidedItemTag = other.tag;
+        if (targetTags.Contains(collidedItemTag) && collidedItemTag == "Collectable")
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
