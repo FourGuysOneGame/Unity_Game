@@ -11,7 +11,7 @@ public class LevelController : MonoBehaviour
         if (other.CompareTag("Player") && Enemy.enemiesAmount <= 0)
         {
             SceneManager.LoadScene(index);
-            index++;
+            index = (index + 1) % 3;
         }
     }
 }
