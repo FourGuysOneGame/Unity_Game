@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
             Transform localTransform = transform;
             Vector3 scale = localTransform.localScale;
             float scaleAbs = Mathf.Abs(scale.x);
-            scale.x = _target.transform.position.x < localTransform.position.x ? -scaleAbs : scaleAbs;
+            scale.x = _target.transform.position.x < localTransform.position.x ? scaleAbs : -scaleAbs;
             transform.localScale = scale;
         }
     }
