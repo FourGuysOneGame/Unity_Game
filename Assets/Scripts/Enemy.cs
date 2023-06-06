@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
     public void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-        Vector3 direction = new Vector3(transform.localScale.x, 0);
+        Vector3 direction = new Vector3(-transform.localScale.x, 0);
         bullet.GetComponent<Bullet>().Setup(direction);
     }
 
@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour, ICollisionHandler, IHitable
             Transform localTransform = transform;
             Vector3 scale = localTransform.localScale;
             float scaleAbs = Mathf.Abs(scale.x);
-            scale.x = _target.transform.position.x < localTransform.position.x ? scaleAbs : -scaleAbs;
+            scale.x = _target.transform.position.x > localTransform.position.x ? -scaleAbs : scaleAbs;
             transform.localScale = scale;
         }
     }
