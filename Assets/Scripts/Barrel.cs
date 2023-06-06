@@ -5,7 +5,7 @@ using UnityEngine;
 public class Barrel : MonoBehaviour, IHitable
 {
     public List<GameObject> itemDrops;
-    private int barrelHp = 3;
+    [SerializeField] private int barrelHp = 3;
 
     private void ItemDrop()
     {
@@ -21,7 +21,7 @@ public class Barrel : MonoBehaviour, IHitable
         else
             barrelHp--;
     }
-    
+
     public void TakeHit()
     {
         ItemDrop();

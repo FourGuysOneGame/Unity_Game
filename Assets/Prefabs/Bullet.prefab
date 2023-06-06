@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1258339118059996346}
   - component: {fileID: 3786348051522299220}
   - component: {fileID: 5408678966386996498}
+  - component: {fileID: 7140543005929910080}
   - component: {fileID: 7315362828275067482}
   - component: {fileID: 7978070519242212159}
   m_Layer: 0
@@ -103,6 +104,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!58 &7140543005929910080
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9038846016808562671}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!50 &7315362828275067482
 Rigidbody2D:
   serializedVersion: 4
@@ -140,4 +157,4 @@ MonoBehaviour:
   targetTags:
   - Enemy
   - Barrel
-  - LifeHeart
+  - Collectable
