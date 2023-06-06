@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
         _actions = new PlayerActions(this);
         _utilities = new PlayerUtilities(this);
         stats.Speed = stats.WalkSpeed;
-        
+
         UIManager.Instance.AddLifeContainer(stats.LivesAmount);
     }
 

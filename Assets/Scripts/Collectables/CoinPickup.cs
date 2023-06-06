@@ -28,7 +28,7 @@ public class CoinPickup : MonoBehaviour, ICollectable
         {
             transform.position = Vector3.MoveTowards(transform.position, _coinCollectTransform.position,
                 Time.deltaTime * speed);
-            
+
             transform.localScale = Vector3.Lerp(transform.localScale, targetSize, scalingSpeed * Time.deltaTime);
 
             if (transform.position == _coinCollectTransform.position)

@@ -1091,7 +1091,6 @@ GameObject:
   - component: {fileID: 191053009}
   - component: {fileID: 191053003}
   - component: {fileID: 191053006}
-  - component: {fileID: 191053010}
   - component: {fileID: 191053008}
   m_Layer: 0
   m_Name: Player
@@ -1266,32 +1265,6 @@ MonoBehaviour:
     runSpeed: 0
     jumpForce: 12
     livesAmount: 3
---- !u!61 &191053010
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191053002}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.22707203, y: -0.008733541}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.76565987, y: 1.4934547}
-  m_EdgeRadius: 0
 --- !u!1 &191095730
 GameObject:
   m_ObjectHideFlags: 0
@@ -8776,7 +8749,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.021452919, y: 0}
+  m_Offset: {x: 0.0050927997, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8787,7 +8760,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.52804685, y: 1}
+  m_Size: {x: 0.75707996, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1513756548
 MonoBehaviour:
@@ -11153,7 +11126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb8c304e79ac881faa1cf5fab7f64af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinsText: {fileID: 819122652}
+  coinsText: {fileID: 0}
   lifeParent: {fileID: 407368938}
   fullLifePrefab: {fileID: 5491207557943398936, guid: 8b39baec2ad6a9f448092e9998859682, type: 3}
   emptyLifePrefab: {fileID: 5491207557943398936, guid: 6289f741b2b35a11aa74d88829efdeb3, type: 3}
