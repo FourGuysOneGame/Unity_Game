@@ -23,7 +23,9 @@ public class PlayerActions : IHitable
     {
         if (_player.Utilities.IsGrounded())
         {
+            _player.JumpSoundEffect.Play();
             _player.Components.Rigidbody2D.AddForce(new Vector2(0, _player.Stats.JumpForce), ForceMode2D.Impulse);
+            
         }
     }
 
@@ -33,6 +35,7 @@ public class PlayerActions : IHitable
         GameObject bullet =
             Object.Instantiate(_player.References.BulletPrefab, firePoint.position, Quaternion.identity);
         Vector3 direction = new Vector3(_player.transform.localScale.x, 0);
+        _player.ShootSoundEffect.Play();
         bullet.GetComponent<Bullet>().Setup(direction);
     }
 
@@ -59,11 +62,13 @@ public class PlayerActions : IHitable
 
     public void TakeHit()
     {
+        _player.TakeHitSoundEffect.Play();
         UIManager.Instance.RemoveLife(1);
     }
 
     public void Heal()
     {
+        _player.HealSoundEffect.Play();
         UIManager.Instance.AddLife(1);
     }
 
@@ -71,6 +76,7 @@ public class PlayerActions : IHitable
     {
         if (collider.CompareTag("Collectable"))
         {
+            _player.CollectSoundEffect.Play();
             collider.GetComponent<ICollectable>().Collect(_player.GetComponent<Collider2D>());
         }
     }

@@ -86,7 +86,9 @@ public class UIManager : MonoBehaviour
 
             // If after taking hit you have 0 health -> restart scene
             if (index == 0)
+            {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
     }
 
