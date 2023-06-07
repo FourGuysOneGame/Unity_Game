@@ -12,6 +12,12 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerStats stats;
 
     private PlayerUtilities _utilities;
+    
+    [SerializeField] private AudioSource jumpSoundEffect;
+    [SerializeField] private AudioSource shootSoundEffect;
+    [SerializeField] private AudioSource takeHitSoundEffect;
+    [SerializeField] private AudioSource healSoundEffect;
+    [SerializeField] private AudioSource collectSoundEffect;
 
     public PlayerActions Actions => _actions;
     public PlayerComponents Components => components;
@@ -19,6 +25,12 @@ public class Player : MonoBehaviour
     public PlayerReferences References => references;
     public PlayerStats Stats => stats;
     public PlayerUtilities Utilities => _utilities;
+
+    public AudioSource JumpSoundEffect => jumpSoundEffect;
+    public AudioSource ShootSoundEffect => shootSoundEffect;
+    public AudioSource TakeHitSoundEffect => takeHitSoundEffect;
+    public AudioSource HealSoundEffect => healSoundEffect;
+    public AudioSource CollectSoundEffect => collectSoundEffect;
 
 
     // Start is called before the first frame update
